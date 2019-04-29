@@ -1,3 +1,4 @@
+# https://www.cbp.gov/newsroom/media-resources/stats
 # source(here::here("R/clean.R"))
 #
 # family_child_total_monthly      <- clean_family_child_total_monthly()
@@ -63,3 +64,6 @@
 #             pattern = "sector_profile")
 # save_as_zip("apprehensions_seizures_stats_2011_2017",
 #             pattern = "apprehensions_seizures_stats")
+
+# setwd(here::here("data/raw"))
+# save_as_zip("raw_files")
