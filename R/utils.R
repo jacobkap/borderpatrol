@@ -131,7 +131,7 @@ fiscal_year_months <- c("october",
 
 
 # Sector profile
-get_sector_profile_table <- function(file,
+ get_sector_profile_table <- function(file,
                                      border_patrol_strings,
                                      year) {
   data <- file[border_patrol_strings[1]:(border_patrol_strings[2]-1)]

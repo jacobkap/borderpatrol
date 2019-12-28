@@ -15,13 +15,13 @@ clean_national_apprehensions <- function() {
 
   data <- data.frame(data, stringsAsFactors = FALSE)
   data_temp <- data.frame(data_temp, stringsAsFactors = FALSE)
-  data <- dplyr::bind_rows(data, data_temp)
+  data <- bind_rows(data, data_temp)
   names(data) <- c("fiscal_year", "total_apprehensions")
   data <-
     data %>%
-    dplyr::mutate(fiscal_year = readr::parse_number(fiscal_year),
-                  total_apprehensions = readr::parse_number(total_apprehensions)) %>%
-    dplyr::arrange(desc(fiscal_year))
+    mutate(fiscal_year = readr::parse_number(fiscal_year),
+           total_apprehensions = readr::parse_number(total_apprehensions)) %>%
+    arrange(desc(fiscal_year))
   data <- as.data.frame(data)
 
   return(data)
@@ -36,9 +36,9 @@ southwest_border_apprehensions <- function() {
   data <- wide_to_long_sectors(data)
   data <-
     data %>%
-    dplyr::select(sector,
-                  fiscal_year,
-                  everything())
+    select(sector,
+           fiscal_year,
+           everything())
   data <- data.frame(data)
   names(data) <- gsub("value", "total_apprehensions", names(data))
   data$sector <- as.character(data$sector)
@@ -56,9 +56,9 @@ southwest_border_deaths <- function() {
   data <- wide_to_long_sectors(data)
   data <-
     data %>%
-    dplyr::select(sector,
-                  fiscal_year,
-                  everything())
+    select(sector,
+           fiscal_year,
+           everything())
   data <- data.frame(data)
   names(data) <- gsub("value", "deaths", names(data))
   data$sector <- as.character(data$sector)
@@ -80,7 +80,7 @@ clean_border_patrol_staffing <- function() {
   data <- as.data.frame(data, stringsAsFactors = FALSE)
   data <- fix_names(data)
   data <- data %>%
-    dplyr::mutate_if(is.character, readr::parse_number)
+    mutate_if(is.character, readr::parse_number)
   data <- long_to_wide(data)
   names(data) <- gsub("value", "number_of_agents", names(data))
   sector_staffing <- data
@@ -104,8 +104,8 @@ clean_border_patrol_staffing <- function() {
   data <- data[data$sector != "Rio Grande", ]
   data$sector <- gsub(" ", "_", data$sector)
   data <- data %>%
-    dplyr::mutate(sector = tolower(sector)) %>%
-    dplyr::mutate_at(vars(starts_with("fy")), make_numeric)
+    mutate(sector = tolower(sector)) %>%
+    mutate_at(vars(starts_with("fy")), make_numeric)
   data <- long_to_wide(data, "sector", "fiscal_year")
   names(data) <- gsub("value", "number_of_agents", names(data))
   data$fiscal_year <- as.character(data$fiscal_year)
@@ -113,12 +113,12 @@ clean_border_patrol_staffing <- function() {
 
   data <-
     sector_staffing %>%
-    dplyr::bind_rows(data) %>%
-    dplyr::select(sector,
-                  fiscal_year,
-                  everything()) %>%
-    dplyr::arrange(desc(fiscal_year),
-                   sector)
+    bind_rows(data) %>%
+    select(sector,
+           fiscal_year,
+           everything()) %>%
+    arrange(desc(fiscal_year),
+            sector)
   data <- as.data.frame(data)
   data$sector <- gsub("_", " ", data$sector)
   data$sector <- gsub(" sectors", "", data$sector)
@@ -145,8 +145,8 @@ clean_family_child_total_monthly <- function() {
 
   data <-
     total_monthly %>%
-    dplyr::left_join(unaccompanied_child) %>%
-    dplyr::left_join(family)
+    left_join(unaccompanied_child) %>%
+    left_join(family)
   data$sector <- gsub("_", " ", data$sector)
   data$sector <- gsub("monthly total", "nationwide total", data$sector)
   data$month <- gsub("yearly_totals", "yearly total", data$month)
@@ -171,8 +171,8 @@ clean_other_than_mexico <- function() {
 
   data <-
     total %>%
-    dplyr::left_join(mexico) %>%
-    dplyr::left_join(not_mexico)
+    left_join(mexico) %>%
+    left_join(not_mexico)
   data <- as.data.frame(data)
   data$sector <- gsub("grand_total", "nationwide total", data$sector)
   data$sector <- gsub("_", " ", data$sector)
@@ -182,13 +182,13 @@ clean_other_than_mexico <- function() {
 
 
 
-# United States Border Patrol Sector Profile 2011-2017 --------------------
+# United States Border Patrol Sector Profile 2011-2018 --------------------
 clean_sector_profile <- function() {
   sector_table <- data.frame(stringsAsFactors = FALSE)
   juv_and_adult_table <- data.frame(stringsAsFactors = FALSE)
   app_by_gender_table <- data.frame(stringsAsFactors = FALSE)
   seizure_table <- data.frame()
-  files <- list.files(pattern = "profile")
+  files <- list.files(pattern = "profile|Profile")
   for (file_name in files) {
     file <- read_pdf(file_name)
     year <- gsub(".*([0-9]{4}).*", "\\1", file_name)
@@ -208,37 +208,39 @@ clean_sector_profile <- function() {
                                                    year)
 
     sector_table <-
-      dplyr::bind_rows(sector_table,
-                       sector_table_temp) %>%
-      dplyr::arrange(desc(fiscal_year))
+      bind_rows(sector_table,
+                sector_table_temp) %>%
+      arrange(desc(fiscal_year))
     juv_and_adult_table <-
-      dplyr::bind_rows(juv_and_adult_table,
-                       juv_and_adult_table_temp) %>%
-      dplyr::arrange(desc(fiscal_year))
+      bind_rows(juv_and_adult_table,
+                juv_and_adult_table_temp) %>%
+      arrange(desc(fiscal_year)) %>%
+      select(-total_apprehensions)
     app_by_gender_table <-
-      dplyr::bind_rows(app_by_gender_table,
-                       app_by_gender_table_temp) %>%
-      dplyr::arrange(desc(fiscal_year))
+      bind_rows(app_by_gender_table,
+                app_by_gender_table_temp) %>%
+      arrange(desc(fiscal_year)) %>%
+      select(-total_apprehensions)
     seizure_table <-
-      dplyr::bind_rows(seizure_table,
-                       seizure_table_temp) %>%
-      dplyr::arrange(desc(fiscal_year))
+      bind_rows(seizure_table,
+                seizure_table_temp) %>%
+      arrange(desc(fiscal_year))
   }
 
 
 
   sector_profile <-
     sector_table %>%
-    dplyr::left_join(juv_and_adult_table) %>%
-    dplyr::left_join(app_by_gender_table) %>%
-    dplyr::rename(female_apprehensions = female,
-                  male_apprehensions = male) %>%
-    dplyr::select(-unknown) %>%
-    dplyr::mutate(fiscal_year = as.numeric(fiscal_year)) %>%
-    dplyr::select(sector,
-                  fiscal_year,
-                  everything())
-  data <- data.frame(data)
+    left_join(juv_and_adult_table) %>%
+    left_join(app_by_gender_table) %>%
+    rename(female_apprehensions = female,
+           male_apprehensions = male) %>%
+    select(-unknown) %>%
+    mutate(fiscal_year = as.numeric(fiscal_year)) %>%
+    select(sector,
+           fiscal_year,
+           everything())
+  sector_profile <- data.frame(sector_profile)
 
   sector_profile$sector <- gsub("_", " ", sector_profile$sector)
   sector_profile$sector <- gsub(" sectors total", "", sector_profile$sector)
@@ -246,9 +248,9 @@ clean_sector_profile <- function() {
   seizure_table$sector <- gsub("_", " ", seizure_table$sector)
   seizure_table <-
     seizure_table %>%
-    dplyr::select(sector,
-                  fiscal_year,
-                  everything())
+    select(sector,
+           fiscal_year,
+           everything())
   seizure_table <- data.frame(seizure_table)
   seizure_table$fiscal_year <- as.numeric(seizure_table$fiscal_year)
   return(list(sector_profile, seizure_table))

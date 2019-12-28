@@ -36,6 +36,9 @@ save_files <- function(data, year, file_name, save_name, rda_only = FALSE) {
     do.call("write_csv", list(as.name(paste0(file_name, year)),
                               path = paste0(save_name,
                                             year, ".csv")))
+    do.call("write_sav", list(as.name(paste0(file_name, year)),
+                              path = paste0(save_name,
+                                            year, ".sav")))
 
     do.call("rm", list(as.name(paste0(file_name, year))))
   }
