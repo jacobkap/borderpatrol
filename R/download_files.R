@@ -1,3 +1,4 @@
+source(here::here("R/utils.R"))
 get_links <- function(url, subset_string = NULL) {
   page <- xml2::read_html(url)
   links <-
@@ -22,7 +23,7 @@ download_border_patrol_pdfs <- function() {
   for (link in links) {
 
     file_name <- gsub(".*/", "", link)
-    file_name <- gsub("%20|-", "_", file_name)
+    file_name <- gsub("%20|-|%25|%28|%29", "_", file_name)
     file_name <- gsub("_+", "_", file_name)
     file_name <- tolower(file_name)
     download.file(link,
@@ -31,3 +32,6 @@ download_border_patrol_pdfs <- function() {
 
   }
 }
+
+#download_border_patrol_pdfs()
+

@@ -6,6 +6,7 @@ library(readr)
 library(zoo)
 library(lubridate)
 library(tidyr)
+library(tabulizer)
 
 
 
@@ -66,7 +67,7 @@ read_pdf <- function(file_name) {
 read_mexico_table <- function(data, value_name) {
   data <- data[grep("Sectors$|\\)$|^\\*|United States", data, invert = TRUE)]
   data <- gsub("([0-9]) ([0-9])", "\\1  \\2", data)
-  data <- stringr::str_split_fixed(data, "\\s{2,}", 20)
+  data <- stringr::str_split_fixed(data, "\\s{2,}", 21)
   data <- as.data.frame(data, stringsAsFactors = FALSE)
   data <- fix_names(data)
   data <- data[!data$sector %in% c("Rio Grande Valley", "Big Bend"), ]
@@ -84,12 +85,42 @@ read_mexico_table <- function(data, value_name) {
 }
 
 sector_by_month_scrape <- function(data, value_name) {
+
   data <- gsub(".*By Month - FY ([0-9]{4})", "FY\\1", data)
   data <- gsub("^(FY[0-9]{4})", "x  x  x  x  x  x  x  x  x  x  x  x  x  x   \\1", data)
-  data <- data[grep("^Big Bend|^Rio Grande Valley|United States Border Patrol|^SECTOR|\\*",
-                    data, invert = TRUE)]
-  data <- gsub("\\(formerly McAllen\\)", "Rio Grande Valley", data)
-  data <- gsub("\\(formerly Marfa\\)", "Big Bend", data)
+  data <- data[data != "Yearly"]
+  data <- gsub("September$", "September yearly total", data)
+  data <- data[!data %in% c("Total",
+                           "*Livermore Sector was closed after FY 2004")]
+
+  if (value_name ==  "total_apprehensions") {
+    data <- data[-1]
+    data <- data[!data %in% c("(formerly Marfa)",
+                              "(formerly McAllen)")]
+    big_bend_rows <- grep("^Big Bend$", data)
+
+    for (i in big_bend_rows) {
+      data[i] <- paste0(data[i], "        ", data[i+1])
+    }
+    data <- data[-c(big_bend_rows + 1)]
+
+    rio_grande_valley_rows <- grep("^Rio Grande Valley$", data)
+    for (i in rio_grande_valley_rows) {
+      data[i] <- paste0(data[i], "        ", data[i+1])
+    }
+    data <- data[-c(rio_grande_valley_rows + 1)]
+
+  } else {
+    data <- data[grep("^Big Bend|^Rio Grande Valley|^Rio Grande|^Valley \\(formerly$|United States Border Patrol|^SECTOR|\\*",
+                      data, invert = TRUE)]
+    data <- gsub("\\(formerly McAllen\\)", "Rio Grande Valley", data)
+    data <- gsub("^McAllen\\)", "Rio Grande Valley", data)
+    data <- gsub("\\(formerly Marfa\\)", "Big Bend", data)
+  }
+
+
+  data <- gsub("([0-9]) ([0-9])", "\\1        \\2", data)
+  data <- gsub("([a-z]) ([0-9])", "\\1        \\2", data)
   data <- stringr::str_split_fixed(data, "\\s{2,}", 15)
   data <- data.frame(data, stringsAsFactors = FALSE)
   names(data) <- c("sector", fiscal_year_months, "yearly_totals", "fiscal_year")
@@ -110,6 +141,9 @@ sector_by_month_scrape <- function(data, value_name) {
     dplyr::arrange(desc(fiscal_year),
                    sector)
   data <- as.data.frame(data)
+  data$sector <- gsub("livermore\\*", "livermore", data$sector)
+  data <- data[!data$sector %in% c("united states border patrol",
+                                   "sector"), ]
   return(data)
 }
 
@@ -131,7 +165,7 @@ fiscal_year_months <- c("october",
 
 
 # Sector profile
- get_sector_profile_table <- function(file,
+get_sector_profile_table <- function(file,
                                      border_patrol_strings,
                                      year) {
   data <- file[border_patrol_strings[1]:(border_patrol_strings[2]-1)]

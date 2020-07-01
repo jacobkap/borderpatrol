@@ -1,0 +1,601 @@
+sector,fiscal_year,total_apprehensions
+big bend,2019,9637
+del rio,2019,57269
+el centro,2019,35138
+el paso,2019,182143
+laredo,2019,38378
+rio grande valley,2019,339135
+san diego,2019,58049
+tucson,2019,63490
+yuma,2019,68269
+southwest border,2019,851508
+big bend,2018,8045
+del rio,2018,15833
+el centro,2018,29230
+el paso,2018,31561
+laredo,2018,32641
+rio grande valley,2018,162262
+san diego,2018,38591
+tucson,2018,52172
+yuma,2018,26244
+southwest border,2018,396579
+big bend,2017,6002
+del rio,2017,13476
+el centro,2017,18633
+el paso,2017,25193
+laredo,2017,25460
+rio grande valley,2017,137562
+san diego,2017,26086
+tucson,2017,38657
+yuma,2017,12847
+southwest border,2017,303916
+big bend,2016,6366
+del rio,2016,23078
+el centro,2016,19448
+el paso,2016,25634
+laredo,2016,36562
+rio grande valley,2016,186830
+san diego,2016,31891
+tucson,2016,64891
+yuma,2016,14170
+southwest border,2016,408870
+big bend,2015,5031
+del rio,2015,19013
+el centro,2015,12820
+el paso,2015,14495
+laredo,2015,35888
+rio grande valley,2015,147257
+san diego,2015,26290
+tucson,2015,63397
+yuma,2015,7142
+southwest border,2015,331333
+big bend,2014,4096
+del rio,2014,24255
+el centro,2014,14511
+el paso,2014,12339
+laredo,2014,44049
+rio grande valley,2014,256393
+san diego,2014,29911
+tucson,2014,87915
+yuma,2014,5902
+southwest border,2014,479371
+big bend,2013,3684
+del rio,2013,23510
+el centro,2013,16306
+el paso,2013,11154
+laredo,2013,50749
+rio grande valley,2013,154453
+san diego,2013,27496
+tucson,2013,120939
+yuma,2013,6106
+southwest border,2013,414397
+big bend,2012,3964
+del rio,2012,21720
+el centro,2012,23916
+el paso,2012,9678
+laredo,2012,44872
+rio grande valley,2012,97762
+san diego,2012,28461
+tucson,2012,120000
+yuma,2012,6500
+southwest border,2012,356873
+big bend,2011,4036
+del rio,2011,16144
+el centro,2011,30191
+el paso,2011,10345
+laredo,2011,36053
+rio grande valley,2011,59243
+san diego,2011,42447
+tucson,2011,123285
+yuma,2011,5833
+southwest border,2011,327577
+big bend,2010,5288
+del rio,2010,14694
+el centro,2010,32562
+el paso,2010,12251
+laredo,2010,35287
+rio grande valley,2010,59766
+san diego,2010,68565
+tucson,2010,212202
+yuma,2010,7116
+southwest border,2010,447731
+big bend,2009,6360
+del rio,2009,17082
+el centro,2009,33521
+el paso,2009,14999
+laredo,2009,40569
+rio grande valley,2009,60989
+san diego,2009,118721
+tucson,2009,241673
+yuma,2009,6951
+southwest border,2009,540865
+big bend,2008,5391
+del rio,2008,20761
+el centro,2008,40961
+el paso,2008,30312
+laredo,2008,43658
+rio grande valley,2008,75473
+san diego,2008,162390
+tucson,2008,317696
+yuma,2008,8363
+southwest border,2008,705005
+big bend,2007,5536
+del rio,2007,22920
+el centro,2007,55883
+el paso,2007,75464
+laredo,2007,56714
+rio grande valley,2007,73430
+san diego,2007,152460
+tucson,2007,378239
+yuma,2007,37992
+southwest border,2007,858638
+big bend,2006,7520
+del rio,2006,42636
+el centro,2006,61465
+el paso,2006,122256
+laredo,2006,74840
+rio grande valley,2006,110528
+san diego,2006,142104
+tucson,2006,392074
+yuma,2006,118549
+southwest border,2006,1071972
+big bend,2005,10536
+del rio,2005,68506
+el centro,2005,55722
+el paso,2005,122679
+laredo,2005,75346
+rio grande valley,2005,134186
+san diego,2005,126904
+tucson,2005,439079
+yuma,2005,138438
+southwest border,2005,1171396
+big bend,2004,10530
+del rio,2004,53794
+el centro,2004,74467
+el paso,2004,104399
+laredo,2004,74706
+rio grande valley,2004,92947
+san diego,2004,138608
+tucson,2004,491771
+yuma,2004,98060
+southwest border,2004,1139282
+big bend,2003,10319
+del rio,2003,50145
+el centro,2003,92099
+el paso,2003,88816
+laredo,2003,70521
+rio grande valley,2003,77749
+san diego,2003,111515
+tucson,2003,347263
+yuma,2003,56638
+southwest border,2003,905065
+big bend,2002,11392
+del rio,2002,66985
+el centro,2002,108273
+el paso,2002,94154
+laredo,2002,82095
+rio grande valley,2002,89927
+san diego,2002,100681
+tucson,2002,333648
+yuma,2002,42654
+southwest border,2002,929809
+big bend,2001,12087
+del rio,2001,104875
+el centro,2001,172852
+el paso,2001,112857
+laredo,2001,87068
+rio grande valley,2001,107844
+san diego,2001,110075
+tucson,2001,449675
+yuma,2001,78385
+southwest border,2001,1235718
+big bend,2000,13689
+del rio,2000,157178
+el centro,2000,238126
+el paso,2000,115696
+laredo,2000,108973
+rio grande valley,2000,133243
+san diego,2000,151681
+tucson,2000,616346
+yuma,2000,108747
+southwest border,2000,1643679
+big bend,1999,14952
+del rio,1999,156653
+el centro,1999,225279
+el paso,1999,110857
+laredo,1999,114004
+rio grande valley,1999,169151
+san diego,1999,182267
+tucson,1999,470449
+yuma,1999,93388
+southwest border,1999,1537000
+big bend,1998,14509
+del rio,1998,131058
+el centro,1998,226695
+el paso,1998,125035
+laredo,1998,103433
+rio grande valley,1998,204257
+san diego,1998,248092
+tucson,1998,387406
+yuma,1998,76195
+southwest border,1998,1516680
+big bend,1997,12692
+del rio,1997,113280
+el centro,1997,146210
+el paso,1997,124376
+laredo,1997,141893
+rio grande valley,1997,243793
+san diego,1997,283889
+tucson,1997,272397
+yuma,1997,30177
+southwest border,1997,1368707
+big bend,1996,13214
+del rio,1996,121137
+el centro,1996,66873
+el paso,1996,145929
+laredo,1996,131841
+rio grande valley,1996,210553
+san diego,1996,483815
+tucson,1996,305348
+yuma,1996,28310
+southwest border,1996,1507020
+big bend,1995,11552
+del rio,1995,76490
+el centro,1995,37317
+el paso,1995,110971
+laredo,1995,93305
+rio grande valley,1995,169101
+san diego,1995,524231
+tucson,1995,227529
+yuma,1995,20894
+southwest border,1995,1271390
+big bend,1994,13494
+del rio,1994,50036
+el centro,1994,27654
+el paso,1994,79688
+laredo,1994,73142
+rio grande valley,1994,124251
+san diego,1994,450152
+tucson,1994,139473
+yuma,1994,21211
+southwest border,1994,979101
+big bend,1993,15486
+del rio,1993,42289
+el centro,1993,30058
+el paso,1993,285781
+laredo,1993,82348
+rio grande valley,1993,109048
+san diego,1993,531689
+tucson,1993,92639
+yuma,1993,23548
+southwest border,1993,1212886
+big bend,1992,13819
+del rio,1992,33414
+el centro,1992,29852
+el paso,1992,248642
+laredo,1992,72449
+rio grande valley,1992,85889
+san diego,1992,565581
+tucson,1992,71036
+yuma,1992,24892
+southwest border,1992,1145574
+big bend,1991,8764
+del rio,1991,38554
+el centro,1991,30450
+el paso,1991,211775
+laredo,1991,72293
+rio grande valley,1991,87319
+san diego,1991,540347
+tucson,1991,59728
+yuma,1991,28646
+southwest border,1991,1077876
+big bend,1990,7180
+del rio,1990,41373
+el centro,1990,28708
+el paso,1990,223219
+laredo,1990,89052
+rio grande valley,1990,97018
+san diego,1990,473323
+tucson,1990,53061
+yuma,1990,36387
+southwest border,1990,1049321
+big bend,1989,5560
+del rio,1989,46786
+el centro,1989,27524
+el paso,1989,168105
+laredo,1989,75292
+rio grande valley,1989,79650
+san diego,1989,366757
+tucson,1989,51445
+yuma,1989,31387
+southwest border,1989,852506
+big bend,1988,6209
+del rio,1988,59403
+el centro,1988,41179
+el paso,1988,182566
+laredo,1988,69912
+rio grande valley,1988,60294
+san diego,1988,431592
+tucson,1988,48683
+yuma,1988,42723
+southwest border,1988,942561
+big bend,1987,9586
+del rio,1987,64934
+el centro,1987,55291
+el paso,1987,231994
+laredo,1987,74139
+rio grande valley,1987,71038
+san diego,1987,500327
+tucson,1987,47481
+yuma,1987,67277
+southwest border,1987,1122067
+big bend,1986,23796
+del rio,1986,123952
+el centro,1986,95186
+el paso,1986,312892
+laredo,1986,143685
+rio grande valley,1986,121783
+san diego,1986,629656
+tucson,1986,71675
+yuma,1986,93219
+southwest border,1986,1615844
+big bend,1985,23667
+del rio,1985,99280
+el centro,1985,71519
+el paso,1985,240350
+laredo,1985,114931
+rio grande valley,1985,82826
+san diego,1985,427772
+tucson,1985,55269
+yuma,1985,67737
+southwest border,1985,1183351
+big bend,1984,22196
+del rio,1984,87058
+el centro,1984,68563
+el paso,1984,212652
+laredo,1984,87059
+rio grande valley,1984,66860
+san diego,1984,407828
+tucson,1984,46283
+yuma,1984,59777
+southwest border,1984,1058276
+big bend,1983,20829
+del rio,1983,83733
+el centro,1983,71897
+el paso,1983,205944
+laredo,1983,65279
+rio grande valley,1983,57706
+san diego,1983,429121
+tucson,1983,35870
+yuma,1983,63595
+southwest border,1983,1033974
+big bend,1982,20268
+del rio,1982,48753
+el centro,1982,55440
+el paso,1982,152882
+laredo,1982,40385
+rio grande valley,1982,32533
+san diego,1982,314979
+tucson,1982,32344
+yuma,1982,48236
+southwest border,1982,745820
+big bend,1981,17584
+del rio,1981,50455
+el centro,1981,59774
+el paso,1981,146872
+laredo,1981,36910
+rio grande valley,1981,32809
+san diego,1981,326836
+tucson,1981,33085
+yuma,1981,45483
+southwest border,1981,749808
+big bend,1980,15602
+del rio,1980,50762
+el centro,1980,57009
+el paso,1980,127488
+laredo,1980,39167
+rio grande valley,1980,35012
+san diego,1980,285984
+tucson,1980,33668
+yuma,1980,45862
+southwest border,1980,690554
+big bend,1979,20116
+del rio,1979,50262
+el centro,1979,55532
+el paso,1979,149722
+laredo,1979,50666
+rio grande valley,1979,41915
+san diego,1979,337930
+tucson,1979,37075
+yuma,1979,52580
+southwest border,1979,795798
+big bend,1978,23501
+del rio,1978,54098
+el centro,1978,42118
+el paso,1978,174010
+laredo,1978,36627
+rio grande valley,1978,45201
+san diego,1978,325557
+tucson,1978,34991
+yuma,1978,53338
+southwest border,1978,789441
+big bend,1977,22239
+del rio,1977,42322
+el centro,1977,38421
+el paso,1977,145059
+laredo,1977,27289
+rio grande valley,1977,38704
+san diego,1977,337195
+tucson,1977,33295
+yuma,1977,48669
+southwest border,1977,733193
+big bend,1976,19846
+del rio,1976,32988
+el centro,1976,32327
+el paso,1976,114886
+laredo,1976,24665
+rio grande valley,1976,38839
+san diego,1976,266709
+tucson,1976,34641
+yuma,1976,42598
+southwest border,1976,607499
+big bend,1975,20472
+del rio,1975,32008
+el centro,1975,27217
+el paso,1975,99000
+laredo,1975,26199
+rio grande valley,1975,31300
+san diego,1975,185499
+tucson,1975,39941
+yuma,1975,50628
+southwest border,1975,512264
+big bend,1974,23291
+del rio,1974,44098
+el centro,1974,26143
+el paso,1974,112432
+laredo,1974,30061
+rio grande valley,1974,38668
+san diego,1974,196981
+tucson,1974,50108
+yuma,1974,49824
+southwest border,1974,571606
+big bend,1973,22378
+del rio,1973,42232
+el centro,1973,23125
+el paso,1973,82386
+laredo,1973,23854
+rio grande valley,1973,37092
+san diego,1973,128889
+tucson,1973,44824
+yuma,1973,36286
+southwest border,1973,441066
+big bend,1972,20269
+del rio,1972,31110
+el centro,1972,15327
+el paso,1972,78168
+laredo,1972,21781
+rio grande valley,1972,29338
+san diego,1972,73115
+tucson,1972,32272
+yuma,1972,19946
+southwest border,1972,321326
+big bend,1971,22026
+del rio,1971,25780
+el centro,1971,14292
+el paso,1971,57796
+laredo,1971,17665
+rio grande valley,1971,28281
+san diego,1971,59375
+tucson,1971,23548
+yuma,1971,15228
+southwest border,1971,263991
+big bend,1970,16770
+del rio,1970,18711
+el centro,1970,12028
+el paso,1970,43640
+laredo,1970,11569
+rio grande valley,1970,20708
+san diego,1970,50663
+tucson,1970,14222
+yuma,1970,13469
+southwest border,1970,201780
+big bend,1969,11973
+del rio,1969,12991
+el centro,1969,9195
+el paso,1969,31159
+laredo,1969,8129
+rio grande valley,1969,14076
+san diego,1969,33311
+tucson,1969,8301
+yuma,1969,8833
+southwest border,1969,137968
+big bend,1968,8834
+del rio,1968,9576
+el centro,1968,8358
+el paso,1968,19408
+laredo,1968,5715
+rio grande valley,1968,10093
+san diego,1968,24116
+tucson,1968,4537
+yuma,1968,6004
+southwest border,1968,96641
+big bend,1967,7049
+del rio,1967,7906
+el centro,1967,6974
+el paso,1967,13656
+laredo,1967,4178
+rio grande valley,1967,9029
+san diego,1967,17844
+tucson,1967,3068
+yuma,1967,4269
+southwest border,1967,73973
+big bend,1966,6592
+del rio,1966,6845
+el centro,1966,6916
+el paso,1966,10119
+laredo,1966,3658
+rio grande valley,1966,8706
+san diego,1966,13362
+tucson,1966,2392
+yuma,1966,4050
+southwest border,1966,62640
+big bend,1965,3973
+del rio,1965,4292
+el centro,1965,5344
+el paso,1965,6355
+laredo,1965,2310
+rio grande valley,1965,8057
+san diego,1965,6558
+tucson,1965,1480
+yuma,1965,1651
+southwest border,1965,40020
+big bend,1964,3146
+del rio,1964,4489
+el centro,1964,2640
+el paso,1964,4486
+laredo,1964,2168
+rio grande valley,1964,9173
+san diego,1964,4521
+tucson,1964,1200
+yuma,1964,696
+southwest border,1964,32519
+big bend,1963,2026
+del rio,1963,4417
+el centro,1963,1690
+el paso,1963,3813
+laredo,1963,1753
+rio grande valley,1963,9992
+san diego,1963,3768
+tucson,1963,1466
+yuma,1963,719
+southwest border,1963,29644
+big bend,1962,1431
+del rio,1962,3250
+el centro,1962,1426
+el paso,1962,3304
+laredo,1962,1274
+rio grande valley,1962,5569
+san diego,1962,3091
+tucson,1962,1247
+yuma,1962,511
+southwest border,1962,21103
+big bend,1961,954
+del rio,1961,3458
+el centro,1961,1878
+el paso,1961,3540
+laredo,1961,1172
+rio grande valley,1961,6713
+san diego,1961,2279
+tucson,1961,1178
+yuma,1961,573
+southwest border,1961,21745
+big bend,1960,732
+del rio,1960,3023
+el centro,1960,1839
+el paso,1960,3630
+laredo,1960,1024
+rio grande valley,1960,5515
+san diego,1960,3371
+tucson,1960,1255
+yuma,1960,633
+southwest border,1960,21022

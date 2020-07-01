@@ -1,17 +1,17 @@
 context("test-southwest_border_deaths")
 
 setwd(here::here("data/clean"))
-load("southwest_border_deaths_1998_2018.rda")
-test_data <- southwest_border_deaths_1998_2018
+load("southwest_border_deaths_1998_2019.rda")
+test_data <- southwest_border_deaths_1998_2019
 
 test_that("Equal number of sectors and years works", {
-  expect_equal(as.numeric(table(table(test_data$fiscal_year))), 21)
+  expect_equal(as.numeric(table(table(test_data$fiscal_year))), 22)
   expect_equal(as.numeric(table(table(test_data$sector))), 10)
 })
 
 
 test_that("Correct years and sectors", {
-  expect_equal(unique(test_data$fiscal_year), 2018:1998)
+  expect_equal(unique(test_data$fiscal_year), 2019:1998)
   expect_equal(unique(test_data$sector), southwest_sectors)
 })
 
@@ -19,7 +19,7 @@ test_that("Correct years and sectors", {
 
 test_that("Correct deaths", {
   expect_equal(head(test_data$deaths[test_data$sector == "big bend"]),
-               c(10, 3, 2, 4, 5, 3))
+               c(3, 10, 3, 2, 4, 5))
   expect_equal(tail(test_data$deaths[test_data$sector == "big bend"]),
                c(0, 4, 3, 3, 0, 3))
   expect_equal(test_data$deaths[test_data$sector == "big bend" &
@@ -28,7 +28,7 @@ test_that("Correct deaths", {
 
 
   expect_equal(head(test_data$deaths[test_data$sector == "el centro"]),
-               c(17, 2, 9, 4, 6, 3))
+               c(17, 17, 2, 9, 4, 6))
   expect_equal(tail(test_data$deaths[test_data$sector == "el centro"]),
                c(61, 64, 96, 72, 56, 90))
   expect_equal(test_data$deaths[test_data$sector == "el centro" &
@@ -37,7 +37,7 @@ test_that("Correct deaths", {
 
 
   expect_equal(head(test_data$deaths[test_data$sector == "rio grande valley"]),
-               c(96, 104, 132, 97, 116, 156))
+               c(69, 96, 104, 132, 97, 116))
   expect_equal(tail(test_data$deaths[test_data$sector == "rio grande valley"]),
                c(39, 30, 37, 40, 36, 26))
   expect_equal(test_data$deaths[test_data$sector == "rio grande valley" &
@@ -48,7 +48,7 @@ test_that("Correct deaths", {
 
 
   expect_equal(head(test_data$deaths[test_data$sector == "tucson"]),
-               c(58, 73, 84, 63, 107, 194))
+               c(61, 58, 73, 84, 63, 107))
   expect_equal(tail(test_data$deaths[test_data$sector == "tucson"]),
                c(137, 134, 80, 74, 29, 11))
   expect_equal(test_data$deaths[test_data$sector == "tucson" &
@@ -58,7 +58,7 @@ test_that("Correct deaths", {
 
 
   expect_equal(head(test_data$deaths[test_data$sector == "southwest border"]),
-               c(283, 298, 329, 251, 315, 451))
+               c(300, 283, 298, 329, 251, 315))
   expect_equal(tail(test_data$deaths[test_data$sector == "southwest border"]),
                c(338, 320, 340, 380, 249, 263))
   expect_equal(test_data$deaths[test_data$sector == "southwest border" &

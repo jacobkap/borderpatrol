@@ -1,0 +1,701 @@
+sector,fiscal_year,number_of_agents
+big bend,2019,535
+blaine,2019,292
+buffalo,2019,273
+coastal border,2019,255
+del rio,2019,1436
+detroit,2019,404
+el centro,2019,863
+el paso,2019,2160
+grand forks,2019,185
+havre,2019,172
+houlton,2019,193
+laredo,2019,1788
+livermore,2019,NA
+miami,2019,127
+nationwide total,2019,19648
+new orleans,2019,69
+northern border,2019,2073
+ramey,2019,59
+rio grande valley,2019,3105
+san diego,2019,2214
+southwest border,2019,16731
+spokane,2019,253
+swanton,2019,301
+tucson,2019,3695
+yuma,2019,809
+big bend,2018,499
+blaine,2018,310
+buffalo,2018,286
+coastal border,2018,248
+del rio,2018,1366
+detroit,2018,416
+el centro,2018,844
+el paso,2018,2171
+grand forks,2018,185
+havre,2018,177
+houlton,2018,186
+laredo,2018,1779
+livermore,2018,NA
+miami,2018,125
+nationwide total,2018,19555
+new orleans,2018,65
+northern border,2018,2097
+ramey,2018,58
+rio grande valley,2018,3096
+san diego,2018,2202
+southwest border,2018,16608
+spokane,2018,236
+swanton,2018,301
+tucson,2018,3681
+yuma,2018,844
+big bend,2017,500
+blaine,2017,296
+buffalo,2017,277
+coastal border,2017,212
+del rio,2017,1391
+detroit,2017,408
+el centro,2017,870
+el paso,2017,2182
+grand forks,2017,189
+havre,2017,183
+houlton,2017,173
+laredo,2017,1666
+livermore,2017,NA
+miami,2017,111
+nationwide total,2017,19437
+new orleans,2017,63
+northern border,2017,2048
+ramey,2017,38
+rio grande valley,2017,3130
+san diego,2017,2199
+southwest border,2017,16605
+spokane,2017,230
+swanton,2017,292
+tucson,2017,3691
+yuma,2017,859
+big bend,2016,511
+blaine,2016,295
+buffalo,2016,285
+coastal border,2016,211
+del rio,2016,1439
+detroit,2016,411
+el centro,2016,927
+el paso,2016,2240
+grand forks,2016,181
+havre,2016,175
+houlton,2016,184
+laredo,2016,1670
+livermore,2016,NA
+miami,2016,105
+nationwide total,2016,19828
+new orleans,2016,67
+northern border,2016,2059
+ramey,2016,39
+rio grande valley,2016,3135
+san diego,2016,2325
+southwest border,2016,17026
+spokane,2016,234
+swanton,2016,294
+tucson,2016,3834
+yuma,2016,829
+big bend,2015,546
+blaine,2015,296
+buffalo,2015,280
+coastal border,2015,213
+del rio,2015,1537
+detroit,2015,412
+el centro,2015,997
+el paso,2015,2343
+grand forks,2015,173
+havre,2015,168
+houlton,2015,192
+laredo,2015,1653
+livermore,2015,NA
+miami,2015,105
+nationwide total,2015,20183
+new orleans,2015,66
+northern border,2015,2044
+ramey,2015,42
+rio grande valley,2015,3042
+san diego,2015,2420
+southwest border,2015,17418
+spokane,2015,229
+swanton,2015,294
+tucson,2015,3962
+yuma,2015,802
+big bend,2014,585
+blaine,2014,313
+buffalo,2014,288
+coastal border,2014,217
+del rio,2014,1534
+detroit,2014,405
+el centro,2014,1071
+el paso,2014,2516
+grand forks,2014,186
+havre,2014,163
+houlton,2014,192
+laredo,2014,1783
+livermore,2014,NA
+miami,2014,95
+nationwide total,2014,20824
+new orleans,2014,62
+northern border,2014,2090
+ramey,2014,60
+rio grande valley,2014,3059
+san diego,2014,2540
+southwest border,2014,18114
+spokane,2014,244
+swanton,2014,299
+tucson,2014,4042
+yuma,2014,855
+big bend,2013,623
+blaine,2013,315
+buffalo,2013,297
+coastal border,2013,213
+del rio,2013,1598
+detroit,2013,410
+el centro,2013,1141
+el paso,2013,2631
+grand forks,2013,189
+havre,2013,192
+houlton,2013,202
+laredo,2013,1803
+livermore,2013,NA
+miami,2013,92
+nationwide total,2013,21391
+new orleans,2013,62
+northern border,2013,2156
+ramey,2013,59
+rio grande valley,2013,3086
+san diego,2013,2572
+southwest border,2013,18610
+spokane,2013,247
+swanton,2013,304
+tucson,2013,4135
+yuma,2013,911
+big bend,2012,693
+blaine,2012,323
+buffalo,2012,311
+coastal border,2012,224
+del rio,2012,1655
+detroit,2012,413
+el centro,2012,1168
+el paso,2012,2718
+grand forks,2012,199
+havre,2012,208
+houlton,2012,200
+laredo,2012,1879
+livermore,2012,NA
+miami,2012,92
+nationwide total,2012,21394
+new orleans,2012,72
+northern border,2012,2206
+ramey,2012,60
+rio grande valley,2012,2546
+san diego,2012,2623
+southwest border,2012,18516
+spokane,2012,246
+swanton,2012,306
+tucson,2012,4176
+yuma,2012,954
+big bend,2011,667
+blaine,2011,331
+buffalo,2011,311
+coastal border,2011,232
+del rio,2011,1626
+detroit,2011,409
+el centro,2011,1164
+el paso,2011,2738
+grand forks,2011,213
+havre,2011,213
+houlton,2011,201
+laredo,2011,1871
+livermore,2011,NA
+miami,2011,94
+nationwide total,2011,21444
+new orleans,2011,70
+northern border,2011,2237
+ramey,2011,68
+rio grande valley,2011,2504
+san diego,2011,2669
+southwest border,2011,18506
+spokane,2011,257
+swanton,2011,302
+tucson,2011,4239
+yuma,2011,969
+big bend,2010,672
+blaine,2010,327
+buffalo,2010,320
+coastal border,2010,246
+del rio,2010,1650
+detroit,2010,430
+el centro,2010,1181
+el paso,2010,2752
+grand forks,2010,213
+havre,2010,221
+houlton,2010,203
+laredo,2010,1858
+livermore,2010,NA
+miami,2010,96
+nationwide total,2010,20558
+new orleans,2010,78
+northern border,2010,2263
+ramey,2010,72
+rio grande valley,2010,2441
+san diego,2010,2594
+southwest border,2010,17535
+spokane,2010,255
+swanton,2010,294
+tucson,2010,3353
+yuma,2010,987
+big bend,2009,682
+blaine,2009,241
+buffalo,2009,289
+coastal border,2009,223
+del rio,2009,1682
+detroit,2009,318
+el centro,2009,1187
+el paso,2009,2712
+grand forks,2009,169
+havre,2009,156
+houlton,2009,190
+laredo,2009,1863
+livermore,2009,NA
+miami,2009,91
+nationwide total,2009,20119
+new orleans,2009,65
+northern border,2009,1887
+ramey,2009,67
+rio grande valley,2009,2422
+san diego,2009,2570
+southwest border,2009,17408
+spokane,2009,232
+swanton,2009,292
+tucson,2009,3318
+yuma,2009,972
+big bend,2008,421
+blaine,2008,182
+buffalo,2008,204
+coastal border,2008,209
+del rio,2008,1427
+detroit,2008,185
+el centro,2008,1080
+el paso,2008,2506
+grand forks,2008,131
+havre,2008,119
+houlton,2008,137
+laredo,2008,1636
+livermore,2008,NA
+miami,2008,86
+nationwide total,2008,17499
+new orleans,2008,58
+northern border,2008,1363
+ramey,2008,65
+rio grande valley,2008,2063
+san diego,2008,2328
+southwest border,2008,15442
+spokane,2008,186
+swanton,2008,219
+tucson,2008,3049
+yuma,2008,932
+big bend,2007,336
+blaine,2007,133
+buffalo,2007,166
+coastal border,2007,172
+del rio,2007,1138
+detroit,2007,157
+el centro,2007,894
+el paso,2007,2251
+grand forks,2007,116
+havre,2007,103
+houlton,2007,113
+laredo,2007,1206
+livermore,2007,NA
+miami,2007,81
+nationwide total,2007,14923
+new orleans,2007,52
+northern border,2007,1098
+ramey,2007,39
+rio grande valley,2007,1822
+san diego,2007,2019
+southwest border,2007,13297
+spokane,2007,132
+swanton,2007,178
+tucson,2007,2806
+yuma,2007,825
+big bend,2006,246
+blaine,2006,121
+buffalo,2006,112
+coastal border,2006,153
+del rio,2006,935
+detroit,2006,117
+el centro,2006,713
+el paso,2006,1741
+grand forks,2006,98
+havre,2006,93
+houlton,2006,104
+laredo,2006,926
+livermore,2006,NA
+miami,2006,81
+nationwide total,2006,12349
+new orleans,2006,41
+northern border,2006,919
+ramey,2006,31
+rio grande valley,2006,1431
+san diego,2006,1671
+southwest border,2006,11032
+spokane,2006,119
+swanton,2006,155
+tucson,2006,2595
+yuma,2006,774
+big bend,2005,220
+blaine,2005,129
+buffalo,2005,121
+coastal border,2005,160
+del rio,2005,907
+detroit,2005,130
+el centro,2005,684
+el paso,2005,1330
+grand forks,2005,109
+havre,2005,100
+houlton,2005,118
+laredo,2005,937
+livermore,2005,NA
+miami,2005,78
+nationwide total,2005,11264
+new orleans,2005,46
+northern border,2005,988
+ramey,2005,36
+rio grande valley,2005,1380
+san diego,2005,1562
+southwest border,2005,9891
+spokane,2005,120
+swanton,2005,161
+tucson,2005,2324
+yuma,2005,547
+big bend,2004,239
+blaine,2004,127
+buffalo,2004,110
+coastal border,2004,160
+del rio,2004,933
+detroit,2004,128
+el centro,2004,734
+el paso,2004,1094
+grand forks,2004,118
+havre,2004,109
+houlton,2004,120
+laredo,2004,981
+livermore,2004,5
+miami,2004,80
+nationwide total,2004,10819
+new orleans,2004,41
+northern border,2004,979
+ramey,2004,34
+rio grande valley,2004,1439
+san diego,2004,1651
+southwest border,2004,9506
+spokane,2004,120
+swanton,2004,147
+tucson,2004,2104
+yuma,2004,331
+big bend,2003,230
+blaine,2003,89
+buffalo,2003,73
+coastal border,2003,152
+del rio,2003,950
+detroit,2003,80
+el centro,2003,755
+el paso,2003,1188
+grand forks,2003,53
+havre,2003,52
+houlton,2003,47
+laredo,2003,1025
+livermore,2003,7
+miami,2003,65
+nationwide total,2003,10717
+new orleans,2003,44
+northern border,2003,569
+ramey,2003,36
+rio grande valley,2003,1524
+san diego,2003,1972
+southwest border,2003,9840
+spokane,2003,78
+swanton,2003,97
+tucson,2003,1838
+yuma,2003,358
+big bend,2002,253
+blaine,2002,81
+buffalo,2002,60
+coastal border,2002,143
+del rio,2002,972
+detroit,2002,64
+el centro,2002,683
+el paso,2002,1122
+grand forks,2002,45
+havre,2002,42
+houlton,2002,47
+laredo,2002,969
+livermore,2002,11
+miami,2002,61
+nationwide total,2002,10045
+new orleans,2002,43
+northern border,2002,492
+ramey,2002,28
+rio grande valley,2002,1484
+san diego,2002,1807
+southwest border,2002,9239
+spokane,2002,63
+swanton,2002,90
+tucson,2002,1626
+yuma,2002,323
+big bend,2001,194
+blaine,2001,48
+buffalo,2001,37
+coastal border,2001,148
+del rio,2001,893
+detroit,2001,38
+el centro,2001,589
+el paso,2001,1086
+grand forks,2001,32
+havre,2001,31
+houlton,2001,33
+laredo,2001,921
+livermore,2001,12
+miami,2001,58
+nationwide total,2001,9821
+new orleans,2001,41
+northern border,2001,340
+ramey,2001,37
+rio grande valley,2001,1451
+san diego,2001,2004
+southwest border,2001,9147
+spokane,2001,39
+swanton,2001,82
+tucson,2001,1686
+yuma,2001,323
+big bend,2000,196
+blaine,2000,45
+buffalo,2000,35
+coastal border,2000,150
+del rio,2000,758
+detroit,2000,35
+el centro,2000,502
+el paso,2000,1036
+grand forks,2000,25
+havre,2000,29
+houlton,2000,29
+laredo,2000,806
+livermore,2000,17
+miami,2000,56
+nationwide total,2000,9212
+new orleans,2000,41
+northern border,2000,306
+ramey,2000,36
+rio grande valley,2000,1368
+san diego,2000,2053
+southwest border,2000,8580
+spokane,2000,34
+swanton,2000,74
+tucson,2000,1548
+yuma,2000,313
+big bend,1999,144
+blaine,1999,48
+buffalo,1999,35
+coastal border,1999,152
+del rio,1999,639
+detroit,1999,35
+el centro,1999,423
+el paso,1999,957
+grand forks,1999,28
+havre,1999,25
+houlton,1999,31
+laredo,1999,685
+livermore,1999,22
+miami,1999,53
+nationwide total,1999,8351
+new orleans,1999,43
+northern border,1999,311
+ramey,1999,34
+rio grande valley,1999,1166
+san diego,1999,2136
+southwest border,1999,7706
+spokane,1999,35
+swanton,1999,74
+tucson,1999,1328
+yuma,1999,228
+big bend,1998,164
+blaine,1998,38
+buffalo,1998,35
+coastal border,1998,161
+del rio,1998,589
+detroit,1998,28
+el centro,1998,383
+el paso,1998,972
+grand forks,1998,28
+havre,1998,25
+houlton,1998,29
+laredo,1998,628
+livermore,1998,26
+miami,1998,56
+nationwide total,1998,7982
+new orleans,1998,40
+northern border,1998,289
+ramey,1998,39
+rio grande valley,1998,1107
+san diego,1998,2274
+southwest border,1998,7357
+spokane,1998,36
+swanton,1998,70
+tucson,1998,1013
+yuma,1998,227
+big bend,1997,135
+blaine,1997,38
+buffalo,1997,33
+coastal border,1997,146
+del rio,1997,471
+detroit,1997,27
+el centro,1997,249
+el paso,1997,918
+grand forks,1997,28
+havre,1997,25
+houlton,1997,26
+laredo,1997,451
+livermore,1997,23
+miami,1997,48
+nationwide total,1997,6895
+new orleans,1997,40
+northern border,1997,267
+ramey,1997,35
+rio grande valley,1997,760
+san diego,1997,2281
+southwest border,1997,6315
+spokane,1997,32
+swanton,1997,58
+tucson,1997,875
+yuma,1997,175
+big bend,1996,134
+blaine,1996,45
+buffalo,1996,32
+coastal border,1996,155
+del rio,1996,406
+detroit,1996,28
+el centro,1996,189
+el paso,1996,841
+grand forks,1996,31
+havre,1996,28
+houlton,1996,30
+laredo,1996,415
+livermore,1996,38
+miami,1996,52
+nationwide total,1996,5942
+new orleans,1996,41
+northern border,1996,292
+ramey,1996,24
+rio grande valley,1996,507
+san diego,1996,1965
+southwest border,1996,5333
+spokane,1996,32
+swanton,1996,66
+tucson,1996,702
+yuma,1996,174
+big bend,1995,133
+blaine,1995,49
+buffalo,1995,30
+coastal border,1995,153
+del rio,1995,399
+detroit,1995,29
+el centro,1995,190
+el paso,1995,746
+grand forks,1995,28
+havre,1995,29
+houlton,1995,31
+laredo,1995,421
+livermore,1995,47
+miami,1995,51
+nationwide total,1995,4945
+new orleans,1995,34
+northern border,1995,296
+ramey,1995,21
+rio grande valley,1995,474
+san diego,1995,1433
+southwest border,1995,4388
+spokane,1995,32
+swanton,1995,68
+tucson,1995,407
+yuma,1995,185
+big bend,1994,128
+blaine,1994,43
+buffalo,1994,31
+coastal border,1994,170
+del rio,1994,299
+detroit,1994,31
+el centro,1994,194
+el paso,1994,643
+grand forks,1994,30
+havre,1994,30
+houlton,1994,35
+laredo,1994,337
+livermore,1994,51
+miami,1994,55
+nationwide total,1994,4287
+new orleans,1994,38
+northern border,1994,306
+ramey,1994,26
+rio grande valley,1994,392
+san diego,1994,1290
+southwest border,1994,3747
+spokane,1994,36
+swanton,1994,70
+tucson,1994,282
+yuma,1994,182
+big bend,1993,134
+blaine,1993,45
+buffalo,1993,33
+coastal border,1993,183
+del rio,1993,297
+detroit,1993,31
+el centro,1993,198
+el paso,1993,608
+grand forks,1993,30
+havre,1993,30
+houlton,1993,34
+laredo,1993,353
+livermore,1993,52
+miami,1993,58
+nationwide total,1993,4028
+new orleans,1993,41
+northern border,1993,310
+ramey,1993,32
+rio grande valley,1993,393
+san diego,1993,992
+southwest border,1993,3444
+spokane,1993,36
+swanton,1993,71
+tucson,1993,287
+yuma,1993,182
+big bend,1992,108
+blaine,1992,39
+buffalo,1992,33
+coastal border,1992,187
+del rio,1992,317
+detroit,1992,29
+el centro,1992,217
+el paso,1992,627
+grand forks,1992,28
+havre,1992,32
+houlton,1992,35
+laredo,1992,364
+livermore,1992,55
+miami,1992,58
+nationwide total,1992,4139
+new orleans,1992,41
+northern border,1992,299
+ramey,1992,33
+rio grande valley,1992,418
+san diego,1992,1009
+southwest border,1992,3555
+spokane,1992,35
+swanton,1992,68
+tucson,1992,300
+yuma,1992,195

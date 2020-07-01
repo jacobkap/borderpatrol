@@ -2,9 +2,9 @@
 setwd(here::here("data/raw"))
 source(here::here("R/utils.R"))
 
-# Nationwide Illegal Alien Apprehensions Fiscal Years 1925-2018 ---------
+# Nationwide Illegal Alien Apprehensions Fiscal Years 1925-2019 ---------
 clean_national_apprehensions <- function() {
-  data <- suppressMessages(pdftools::pdf_text("bp_total_apps_fy1925_fy2018.pdf"))
+  data <- suppressMessages(pdftools::pdf_text("u.s._border_patrol_total_apprehensions_fy_1925_fy_2019_.pdf"))
   data <- unlist(strsplit(data, split = "\n"))
   data <- trimws(data)
   data <- data[4:length(data)]
@@ -23,15 +23,16 @@ clean_national_apprehensions <- function() {
            total_apprehensions = readr::parse_number(total_apprehensions)) %>%
     arrange(desc(fiscal_year))
   data <- as.data.frame(data)
+  data <- data[!is.na(data$fiscal_year), ]
 
   return(data)
 }
 
 
 
-# Southwest Border Sections Apprehension Fiscal Years 1960-2018 -----------
+# Southwest Border Sections Apprehension Fiscal Years 1960-2019 -----------
 southwest_border_apprehensions <- function() {
-  data <- read_pdf("bp_southwest_border_sector_apps_fy1960_fy2018.pdf")
+  data <- read_pdf("u.s._border_patrol_fiscal_year_southwest_border_sector_apprehensions_fy_1960_fy_2019_0.pdf")
   data <- data[c(4, 8:length(data))]
   data <- wide_to_long_sectors(data)
   data <-
@@ -49,9 +50,9 @@ southwest_border_apprehensions <- function() {
 
 
 
-# Southwest Border Sections Deaths Fiscal Years 1998-2018 -----------------
+# Southwest Border Sections Deaths Fiscal Years 1998-2019 -----------------
 southwest_border_deaths <- function() {
-  data <- read_pdf("bp_southwest_border_sector_deaths_fy1998_fy2018.pdf")
+  data <- read_pdf("u.s._border_patrol_fiscal_year_southwest_border_sector_deaths_fy_1998_fy_2019_0.pdf")
   data <- data[c(4, 8:(length(data)-1))]
   data <- wide_to_long_sectors(data)
   data <-
@@ -68,14 +69,13 @@ southwest_border_deaths <- function() {
 }
 
 
-# Border Patrol Agent Nationwide Staffing 1992-2018 -----------------------
+# Border Patrol Agent Nationwide Staffing 1992-2019 -----------------------
 clean_border_patrol_staffing <- function() {
-  data <- read_pdf("staffing_fy1992_fy2018.pdf")
+  data <- read_pdf("u.s._border_patrol_fiscal_year_staffing_statistics_fy_1992_fy_2019_0.pdf")
   # By Border sector
   sector_locations <- grep("Border Patrol Agent Staffing By Fiscal Year", data)
   data <- data[sector_locations[2]:(sector_locations[3]-1)]
-  data <- data[2:29]
-  data[28] <- gsub("FY 2016", "FY 2018", data[28])
+  data <- data[2:30]
   data <- stringr::str_split_fixed(data, "\\s{2,}", 5)
   data <- as.data.frame(data, stringsAsFactors = FALSE)
   data <- fix_names(data)
@@ -87,7 +87,7 @@ clean_border_patrol_staffing <- function() {
   sector_staffing$sector <- as.character(sector_staffing$sector)
 
   # By Border subsector
-  data <- read_pdf("staffing_fy1992_fy2018.pdf")
+  data <- read_pdf("u.s._border_patrol_fiscal_year_staffing_statistics_fy_1992_fy_2019_0.pdf")
   sector_locations <- grep("Border Patrol Agent Staffing By Fiscal Year", data)
   data <- data[sector_locations[3]:length(data)]
   data <- data[grep("Sectors$|\\)$|^\\*", data, invert = TRUE)]
@@ -96,7 +96,7 @@ clean_border_patrol_staffing <- function() {
   data <- gsub("([0-9]) ([0-9])", "\\1  \\2", data)
   data <- gsub("FY ([0-9]{4}) ", "FY\\1  ", data)
   data <- data[-1]
-  data <- stringr::str_split_fixed(data, "\\s{2,}", 28)
+  data <- stringr::str_split_fixed(data, "\\s{2,}", 29)
   data <- as.data.frame(data, stringsAsFactors = FALSE)
   data <- fix_names(data)
   data$sector <- gsub("Valley", "Rio Grande Valley", data$sector)
@@ -126,20 +126,20 @@ clean_border_patrol_staffing <- function() {
 
 }
 
-# Total Unaccompanied Alien Children (0-17 Years Old) by month 2010 - 2018 --------
+# Total Unaccompanied Alien Children (0-17 Years Old) by month 2010 - 2019 --------
 clean_family_child_total_monthly <- function() {
-  unaccompanied_child <- read_pdf("bp_total_monthly_uacs_sector_fy2010_fy2018.pdf")
+  unaccompanied_child <- read_pdf("u.s._border_patrol_total_monthly_uac_apprehensions_by_sector_fy_2010_fy_2019_0.pdf")
   unaccompanied_child <- sector_by_month_scrape(unaccompanied_child,
                                                 "unaccompanied_child_apprehension")
 
-  # Total Illegal Apprehensions by Month 2000-2018 --------------------------
-  total_monthly <- read_pdf("bp_total_monthly_apps_sector_area_fy2018.pdf")
+  # Total Illegal Apprehensions by Month 2000-2019 --------------------------
+  total_monthly <- read_pdf("u.s._border_patrol_monthly_apprehensions_fy_2000_fy_2019_1.pdf")
   total_monthly <- sector_by_month_scrape(total_monthly,
                                           "total_apprehensions")
 
 
-  # Total Family Unit Apprehensions by Month 2000-2018 --------------------------
-  family <- read_pdf("bp_total_monthly_family_units_sector_fy13_fy18.pdf")
+  # Total Family Unit Apprehensions by Month 2000-2019 --------------------------
+  family <- read_pdf("u.s._border_patrol_total_monthly_family_unit_apprehensions_by_sector_fy_2013_fy_2019_1.pdf")
   family <- sector_by_month_scrape(family,
                                    "family_apprehensions")
 
@@ -155,9 +155,10 @@ clean_family_child_total_monthly <- function() {
 }
 
 
-# Applications Other than Mexico 2000-2018 --------------------------------
+# Applications Other than Mexico 2000-2019 --------------------------------
 clean_other_than_mexico <- function() {
-  file <- read_pdf("bp_total_apps_other_mexico_fy2000_fy2018.pdf")
+  # The PDF name is weird (probably a wrong name) but is accurate
+  file <- read_pdf("u.s._border_patrol_total_monthly_family_unit_apprehensions_by_sector_fy_2013_fy_2019_0.pdf")
 
   sector_locations <- grep("SECTOR", file)
   total <- file[sector_locations[1]:(sector_locations[2]-1)]
@@ -182,7 +183,7 @@ clean_other_than_mexico <- function() {
 
 
 
-# United States Border Patrol Sector Profile 2011-2018 --------------------
+# United States Border Patrol Sector Profile 2011-2019 --------------------
 clean_sector_profile <- function() {
   sector_table <- data.frame(stringsAsFactors = FALSE)
   juv_and_adult_table <- data.frame(stringsAsFactors = FALSE)
@@ -192,6 +193,7 @@ clean_sector_profile <- function() {
   for (file_name in files) {
     file <- read_pdf(file_name)
     year <- gsub(".*([0-9]{4}).*", "\\1", file_name)
+    if (grepl("fy18", year)) year <- "2018"
     border_patrol_strings <- grep("United States Border Patrol", file)
 
     sector_table_temp <- get_sector_profile_table(file,

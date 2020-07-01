@@ -1,17 +1,17 @@
 context("test-southwest_border_apprehensions")
 
 setwd(here::here("data/clean"))
-load("southwest_border_apprehensions_1960_2018.rda")
-test_data <- southwest_border_apprehensions_1960_2018
+load("southwest_border_apprehensions_1960_2019.rda")
+test_data <- southwest_border_apprehensions_1960_2019
 
 test_that("Equal number of sectors and years works", {
-  expect_equal(as.numeric(table(table(test_data$fiscal_year))), 59)
+  expect_equal(as.numeric(table(table(test_data$fiscal_year))), 60)
   expect_equal(as.numeric(table(table(test_data$sector))), 10)
 })
 
 
 test_that("Correct years and sectors", {
-  expect_equal(unique(test_data$fiscal_year), 2018:1960)
+  expect_equal(unique(test_data$fiscal_year), 2019:1960)
   expect_equal(unique(test_data$sector), southwest_sectors)
 })
 
@@ -19,7 +19,7 @@ test_that("Correct years and sectors", {
 
 test_that("Correct apprehensions", {
   expect_equal(head(test_data$total_apprehensions[test_data$sector == "big bend"]),
-               c(8045, 6002, 6366, 5031, 4096, 3684))
+               c(9637, 8045, 6002, 6366, 5031, 4096))
   expect_equal(tail(test_data$total_apprehensions[test_data$sector == "big bend"]),
                c(3973, 3146, 2026, 1431, 954, 732))
   expect_equal(test_data$total_apprehensions[test_data$sector == "big bend" &
@@ -32,7 +32,7 @@ test_that("Correct apprehensions", {
 
 
   expect_equal(head(test_data$total_apprehensions[test_data$sector == "el centro"]),
-               c(29230, 18633, 19448, 12820, 14511, 16306))
+               c(35138, 29230, 18633, 19448, 12820, 14511))
   expect_equal(tail(test_data$total_apprehensions[test_data$sector == "el centro"]),
                c(5344, 2640, 1690, 1426, 1878, 1839))
   expect_equal(test_data$total_apprehensions[test_data$sector == "el centro" &
@@ -45,7 +45,7 @@ test_that("Correct apprehensions", {
 
 
   expect_equal(head(test_data$total_apprehensions[test_data$sector == "rio grande valley"]),
-               c(162262, 137562, 186830, 147257, 256393, 154453))
+               c(339135, 162262, 137562, 186830, 147257, 256393))
   expect_equal(tail(test_data$total_apprehensions[test_data$sector == "rio grande valley"]),
                c(8057, 9173, 9992, 5569, 6713, 5515))
   expect_equal(test_data$total_apprehensions[test_data$sector == "rio grande valley" &
@@ -59,7 +59,7 @@ test_that("Correct apprehensions", {
 
 
   expect_equal(head(test_data$total_apprehensions[test_data$sector == "tucson"]),
-               c(52172, 38657, 64891, 63397, 87915, 120939))
+               c(63490, 52172, 38657, 64891, 63397, 87915))
   expect_equal(tail(test_data$total_apprehensions[test_data$sector == "tucson"]),
                c(1480, 1200, 1466, 1247, 1178, 1255))
   expect_equal(test_data$total_apprehensions[test_data$sector == "tucson" &
@@ -72,7 +72,7 @@ test_that("Correct apprehensions", {
 
 
   expect_equal(head(test_data$total_apprehensions[test_data$sector == "southwest border"]),
-               c(396579, 303916, 408870, 331333, 479371, 414397))
+               c(851508, 396579, 303916, 408870, 331333, 479371))
   expect_equal(tail(test_data$total_apprehensions[test_data$sector == "southwest border"]),
                c(40020, 32519, 29644, 21103, 21745, 21022))
   expect_equal(test_data$total_apprehensions[test_data$sector == "southwest border" &

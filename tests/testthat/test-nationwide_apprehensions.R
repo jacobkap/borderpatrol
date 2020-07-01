@@ -1,21 +1,21 @@
 context("test-nationwide_apprehensions")
 
 setwd(here::here("data/clean"))
-load("nationwide_total_apprehensions_1925_2018.rda")
-test_data <- nationwide_total_apprehensions_1925_2018
+load("nationwide_total_apprehensions_1925_2019.rda")
+test_data <- nationwide_total_apprehensions_1925_2019
 
 test_that("Years are right", {
-  expect_equal(test_data$fiscal_year, 2018:1925)
+  expect_equal(test_data$fiscal_year, 2019:1925)
 })
 
 
 test_that("Apprehensions are right", {
-  expect_equal(head(test_data$total_apprehensions), c(404142,
+  expect_equal(head(test_data$total_apprehensions), c(859501,
+                                                      404142,
                                                       310531,
                                                       415816,
                                                       337117,
-                                                      486651,
-                                                      420789))
+                                                      486651))
   expect_equal(tail(test_data$total_apprehensions), c(20880,
                                                       32711,
                                                       23566,

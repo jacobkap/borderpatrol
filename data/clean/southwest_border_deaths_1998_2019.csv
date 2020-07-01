@@ -1,0 +1,221 @@
+sector,fiscal_year,deaths
+big bend,2019,3
+del rio,2019,38
+el centro,2019,17
+el paso,2019,20
+laredo,2019,78
+rio grande valley,2019,69
+san diego,2019,7
+tucson,2019,61
+yuma,2019,7
+southwest border,2019,300
+big bend,2018,10
+del rio,2018,24
+el centro,2018,17
+el paso,2018,4
+laredo,2018,69
+rio grande valley,2018,96
+san diego,2018,4
+tucson,2018,58
+yuma,2018,1
+southwest border,2018,283
+big bend,2017,3
+del rio,2017,18
+el centro,2017,2
+el paso,2017,8
+laredo,2017,84
+rio grande valley,2017,104
+san diego,2017,4
+tucson,2017,73
+yuma,2017,2
+southwest border,2017,298
+big bend,2016,2
+del rio,2016,14
+el centro,2016,9
+el paso,2016,6
+laredo,2016,68
+rio grande valley,2016,132
+san diego,2016,7
+tucson,2016,84
+yuma,2016,7
+southwest border,2016,329
+big bend,2015,4
+del rio,2015,12
+el centro,2015,4
+el paso,2015,2
+laredo,2015,57
+rio grande valley,2015,97
+san diego,2015,6
+tucson,2015,63
+yuma,2015,6
+southwest border,2015,251
+big bend,2014,5
+del rio,2014,17
+el centro,2014,6
+el paso,2014,1
+laredo,2014,54
+rio grande valley,2014,116
+san diego,2014,5
+tucson,2014,107
+yuma,2014,4
+southwest border,2014,315
+big bend,2013,3
+del rio,2013,18
+el centro,2013,3
+el paso,2013,2
+laredo,2013,62
+rio grande valley,2013,156
+san diego,2013,7
+tucson,2013,194
+yuma,2013,6
+southwest border,2013,451
+big bend,2012,1
+del rio,2012,29
+el centro,2012,11
+el paso,2012,1
+laredo,2012,91
+rio grande valley,2012,144
+san diego,2012,5
+tucson,2012,180
+yuma,2012,9
+southwest border,2012,471
+big bend,2011,2
+del rio,2011,18
+el centro,2011,5
+el paso,2011,6
+laredo,2011,65
+rio grande valley,2011,66
+san diego,2011,15
+tucson,2011,195
+yuma,2011,3
+southwest border,2011,375
+big bend,2010,0
+del rio,2010,23
+el centro,2010,14
+el paso,2010,4
+laredo,2010,35
+rio grande valley,2010,29
+san diego,2010,8
+tucson,2010,251
+yuma,2010,1
+southwest border,2010,365
+big bend,2009,3
+del rio,2009,29
+el centro,2009,27
+el paso,2009,5
+laredo,2009,58
+rio grande valley,2009,68
+san diego,2009,15
+tucson,2009,212
+yuma,2009,3
+southwest border,2009,420
+big bend,2008,3
+del rio,2008,22
+el centro,2008,20
+el paso,2008,8
+laredo,2008,32
+rio grande valley,2008,92
+san diego,2008,32
+tucson,2008,171
+yuma,2008,5
+southwest border,2008,385
+big bend,2007,0
+del rio,2007,20
+el centro,2007,12
+el paso,2007,25
+laredo,2007,52
+rio grande valley,2007,61
+san diego,2007,15
+tucson,2007,202
+yuma,2007,11
+southwest border,2007,398
+big bend,2006,4
+del rio,2006,34
+el centro,2006,21
+el paso,2006,33
+laredo,2006,36
+rio grande valley,2006,81
+san diego,2006,36
+tucson,2006,169
+yuma,2006,40
+southwest border,2006,454
+big bend,2005,4
+del rio,2005,28
+el centro,2005,30
+el paso,2005,28
+laredo,2005,53
+rio grande valley,2005,55
+san diego,2005,23
+tucson,2005,219
+yuma,2005,52
+southwest border,2005,492
+big bend,2004,0
+del rio,2004,21
+el centro,2004,36
+el paso,2004,18
+laredo,2004,22
+rio grande valley,2004,35
+san diego,2004,15
+tucson,2004,142
+yuma,2004,39
+southwest border,2004,328
+big bend,2003,0
+del rio,2003,23
+el centro,2003,61
+el paso,2003,10
+laredo,2003,17
+rio grande valley,2003,39
+san diego,2003,29
+tucson,2003,137
+yuma,2003,22
+southwest border,2003,338
+big bend,2002,4
+del rio,2002,29
+el centro,2002,64
+el paso,2002,8
+laredo,2002,15
+rio grande valley,2002,30
+san diego,2002,24
+tucson,2002,134
+yuma,2002,12
+southwest border,2002,320
+big bend,2001,3
+del rio,2001,41
+el centro,2001,96
+el paso,2001,10
+laredo,2001,28
+rio grande valley,2001,37
+san diego,2001,21
+tucson,2001,80
+yuma,2001,24
+southwest border,2001,340
+big bend,2000,3
+del rio,2000,48
+el centro,2000,72
+el paso,2000,26
+laredo,2000,47
+rio grande valley,2000,40
+san diego,2000,34
+tucson,2000,74
+yuma,2000,36
+southwest border,2000,380
+big bend,1999,0
+del rio,1999,30
+el centro,1999,56
+el paso,1999,15
+laredo,1999,37
+rio grande valley,1999,36
+san diego,1999,25
+tucson,1999,29
+yuma,1999,21
+southwest border,1999,249
+big bend,1998,3
+del rio,1998,28
+el centro,1998,90
+el paso,1998,24
+laredo,1998,20
+rio grande valley,1998,26
+san diego,1998,44
+tucson,1998,11
+yuma,1998,17
+southwest border,1998,263
